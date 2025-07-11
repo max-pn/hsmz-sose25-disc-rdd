@@ -20,8 +20,6 @@ services:
       - "11434:11434"
     volumes:
       - ollama_data:/root/.ollama
-    environment:
-      - OLLAMA_DEFAULT_MODEL=${OLLAMA_DEFAULT_MODEL}
     restart: unless-stopped
 
   openwebui:
